@@ -11,8 +11,10 @@ namespace KendoUI_Web_App.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Welcome to ASP.NET MVC!";
+            var list = new List<String>()
+                        {"foo","baz","bar"};
 
-            return View();
+            return View(list);
         }
 
         public ActionResult About()
